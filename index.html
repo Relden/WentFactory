@@ -83,42 +83,143 @@
     </div>
   </section>
 
-  <!-- 3. Продукція (основний блок) -->
-  <section class="py-16 md:py-24 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Що ми виготовляємо</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Приклад картки  -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
-            <img 
-                src="img/1.webp" 
-                alt="Круглі повітропроводи" 
-                class="w-full h-48 object-cover"
-            >
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">Круглі повітроводи</h3>
-            <p class="text-gray-600 mb-4">Спірально-навивні Ø 100–2000 мм</p>
-            <p class="text-vent-accent font-semibold">від 1000 грн / м.п.</p>
-          </div>
-        </div>
+ <!-- Детальний асортимент -->
+<section class="py-16 md:py-24 bg-gray-100">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-vent-dark">Детальний асортимент</h2>
+    <p class="text-center text-lg text-gray-600 mb-10 max-w-3xl mx-auto">
+      Натисніть на товар, щоб побачити доступні розміри та ціни.
+    </p>
 
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
-            <img 
-                src="img/2.png" 
-                alt="Фасонні деталі" 
-                class="w-full h-48 object-cover"
-            >
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">Фасонні елементи</h3>
-            <p class="text-gray-600 mb-4">Відводи, трійники, переходи, фланці</p>
-            <p class="text-vent-accent font-semibold">за кресленням / прайсом</p>
-          </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+      
+      <!-- Товар 1: Круглі повітропроводи -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="/img/1.webp" alt="Круглі повітропроводи" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 text-vent-primary">Круглі повітропроводи (спірально-навивні)</h3>
+          <details class="mt-4">
+            <summary class="cursor-pointer text-vent-accent font-semibold hover:underline">Розміри та ціни (натисніть, щоб відкрити)</summary>
+            <table class="w-full mt-4 border-collapse text-sm text-gray-700">
+              <thead>
+                <tr class="bg-gray-200">
+                  <th class="p-2 border">Діаметр (мм)</th>
+                  <th class="p-2 border">Ціна (грн / м.п.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-2 border">100</td>
+                  <td class="p-2 border">350</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border">125</td>
+                  <td class="p-2 border">400</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border">200</td>
+                  <td class="p-2 border">650</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border">250</td>
+                  <td class="p-2 border">750</td>
+                </tr>
+                <!--  більше рядків  -->
+              </tbody>
+            </table>
+          </details>
         </div>
-
-        <!-- Додати ще -->
       </div>
+
+      <!-- Товар 2: Відводи 90° -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="img/2.webp" alt="Відводи 90°" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 text-vent-primary">Відводи (коліна) 90°</h3>
+          <details class="mt-4">
+            <summary class="cursor-pointer text-vent-accent font-semibold hover:underline">Розміри та ціни (натисніть, щоб відкрити)</summary>
+            <table class="w-full mt-4 border-collapse text-sm text-gray-700">
+              <thead>
+                <tr class="bg-gray-200">
+                  <th class="p-2 border">Діаметр (мм)</th>
+                  <th class="p-2 border">Тип (круглий/прямокутний)</th>
+                  <th class="p-2 border">Ціна (грн / шт)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-2 border">100</td>
+                  <td class="p-2 border">Круглий</td>
+                  <td class="p-2 border">450</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border">150</td>
+                  <td class="p-2 border">Круглий</td>
+                  <td class="p-2 border">700</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border">ціна за м²</td>
+                  <td class="p-2 border">Прямокутний</td>
+                  <td class="p-2 border">500</td>
+                </tr>
+                <!-- Додай  рядків: 45°, 60°  -->
+              </tbody>
+            </table>
+          </details>
+        </div>
+      </div>
+
+      <!-- Товар 3: Переходи -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="img/3.jpg" alt="Переходи" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 text-vent-primary">Переходи (конічні)</h3>
+          <details class="mt-4">
+            <summary class="cursor-pointer text-vent-accent font-semibold hover:underline">Розміри та ціни (натисніть, щоб відкрити)</summary>
+            <table class="w-full mt-4 border-collapse text-sm text-gray-700">
+              <thead>
+                <tr class="bg-gray-200">
+                  <th class="p-2 border">Розмір (мм)</th>
+                  <th class="p-2 border">Тип</th>
+                  <th class="p-2 border">Ціна (грн / шт)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-2 border">100→150</td>
+                  <td class="p-2 border">Круглий</td>
+                  <td class="p-2 border">380</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border">200→300</td>
+                  <td class="p-2 border">Круглий</td>
+                  <td class="p-2 border">500</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border">ціна за м²</td>
+                  <td class="p-2 border">Прямокутний</td>
+                  <td class="p-2 border">700–900</td>
+                </tr>
+                <!--  більше рядків -->
+              </tbody>
+            </table>
+          </details>
+        </div>
+      </div>
+
+      <!-- Додай нові картки -->
+     
     </div>
-  </section>
+  </div>
+</section>
+
+    <div class="text-center mt-12 mb-12 md:mb-16 lg:mb-20">
+      <a href="#contacts" class="bg-vent-primary text-white px-10 py-5 rounded-xl font-bold text-lg shadow-lg hover:bg-vent-primary-hover transition inline-block">
+        Замовити нестандартний виріб →
+      </a>
+    </div>
+  </div>
+</section>
 
   <!-- форма  -->
   <section class="py-16 bg-vent-primary text-white text-center">
@@ -166,6 +267,189 @@
     <p class="mt-2 text-sm">м. Івано-Франківськ</p>
   </footer>
 
+ <!-- Кнопка відкриття модалки (можна поставити де завгодно, наприклад під секцією асортименту) -->
+<div class="text-center my-12">
+  <button id="openCalcBtn" class="bg-vent-accent text-white px-10 py-5 rounded-xl font-bold text-xl shadow-xl hover:bg-amber-600 transition">
+    Розрахувати вартість замовлення →
+  </button>
+</div>
+
+<!-- Модальне вікно -->
+<div id="priceCalcModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-xl w-full max-w-6xl max-h-[92vh] overflow-y-auto shadow-2xl m-4">
+    
+    <!-- Шапка модалки -->
+    <div class="sticky top-0 bg-white border-b px-6 py-4 flex justify-between items-center z-10">
+      <h3 class="text-2xl font-bold text-vent-primary">Додати товари до розрахунку</h3>
+      <button id="closeModal" class="text-gray-600 hover:text-gray-900 text-3xl font-bold">&times;</button>
+    </div>
+
+    <!-- Список товарів -->
+    <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Товар 1 -->
+      <div class="border rounded-xl overflow-hidden hover:shadow-lg transition">
+        <img src="img/1.webp" alt="Круглі повітропроводи" class="w-full h-40 object-cover">
+        <div class="p-5">
+          <h4 class="font-bold text-lg mb-3">Круглий повітропровід спірально-навивний</h4>
+          <select class="w-full border rounded px-3 py-2 mb-4 text-sm" data-price-base="320">
+            <option value="100">Ø 100 мм – 320 грн/м.п.</option>
+            <option value="125">Ø 125 мм – 350 грн/м.п.</option>
+            <option value="160">Ø 160 мм – 380 грн/м.п.</option>
+            <option value="200">Ø 200 мм – 420 грн/м.п.</option>
+            <option value="250">Ø 250 мм – 480 грн/м.п.</option>
+            <option value="315">Ø 315 мм – 580 грн/м.п.</option>
+            <!-- додавай скільки потрібно -->
+          </select>
+          <div class="flex items-center gap-4 mb-4">
+            <label class="text-sm font-medium">Кількість (м.п.):</label>
+            <input type="number" min="1" value="1" class="w-20 border rounded px-3 py-2 text-center quantity-input">
+          </div>
+          <button class="add-to-cart w-full bg-vent-primary text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+            Додати
+          </button>
+        </div>
+      </div>
+
+      <!-- Товар 2 -->
+      <div class="border rounded-xl overflow-hidden hover:shadow-lg transition">
+        <img src="img/2.webp" alt="Відвід 90°" class="w-full h-40 object-cover">
+        <div class="p-5">
+          <h4 class="font-bold text-lg mb-3">Відвід 90° круглий</h4>
+          <select class="w-full border rounded px-3 py-2 mb-4 text-sm" data-price-base="550">
+            <option value="100">Ø 100 мм – 550 грн/шт</option>
+            <option value="125">Ø 125 мм – 620 грн/шт</option>
+            <option value="160">Ø 160 мм – 720 грн/шт</option>
+            <option value="200">Ø 200 мм – 850 грн/шт</option>
+          </select>
+          <div class="flex items-center gap-4 mb-4">
+            <label class="text-sm font-medium">Кількість (шт):</label>
+            <input type="number" min="1" value="1" class="w-20 border rounded px-3 py-2 text-center quantity-input">
+          </div>
+          <button class="add-to-cart w-full bg-vent-primary text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+            Додати
+          </button>
+        </div>
+      </div>
+
+      <!-- Додавай сюди інші товари за аналогією -->
+
+    </div>
+
+    <!-- Нижня панель модалки -->
+    <div class="sticky bottom-0 bg-white border-t px-6 py-4 flex justify-end">
+      <button id="closeModalBottom" class="px-8 py-3 bg-gray-200 text-gray-800 rounded-lg font-medium hover:bg-gray-300 transition">
+        Готово
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Таблиця розрахунку (залишається та сама) -->
+<section class="py-12 bg-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Ваш розрахунок</h2>
+    
+    <div class="overflow-x-auto">
+      <table id="cartTable" class="w-full border-collapse text-left">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="p-4 border-b font-semibold">Товар / Розмір</th>
+            <th class="p-4 border-b font-semibold text-center">Кількість</th>
+            <th class="p-4 border-b font-semibold text-right">Ціна за одиницю</th>
+            <th class="p-4 border-b font-semibold text-right">Сума</th>
+            <th class="p-4 border-b w-10"></th>
+          </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+        <tfoot>
+          <tr class="font-bold text-lg">
+            <td colspan="3" class="p-4 text-right">Разом:</td>
+            <td id="totalSum" class="p-4 text-right">0 грн</td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <p class="text-center text-sm text-gray-500 mt-6">
+      * Ціни орієнтовні. Остаточну вартість уточнюйте у менеджера.
+    </p>
+  </div>
+</section>
+
+<!-- JavaScript (оновлений – модалка не закривається автоматично) -->
+<script>
+  const modal = document.getElementById('priceCalcModal');
+  const openBtn = document.getElementById('openCalcBtn');
+  const closeBtns = document.querySelectorAll('#closeModal, #closeModalBottom');
+  const cartBody = document.getElementById('cartBody');
+  const totalSumEl = document.getElementById('totalSum');
+
+  // Відкрити модалку
+  openBtn.addEventListener('click', () => {
+    modal.classList.remove('hidden');
+  });
+
+  // Закрити модалку (кнопки × і Готово)
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', () => modal.classList.add('hidden'));
+  });
+
+  // Закриття по кліку поза вікном
+  modal.addEventListener('click', e => {
+    if (e.target === modal) modal.classList.add('hidden');
+  });
+
+  // Додавання товару
+  document.querySelectorAll('.add-to-cart').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.border.rounded-xl');
+      const imgSrc = card.querySelector('img').src;
+      const name = card.querySelector('h4').textContent.trim();
+      const select = card.querySelector('select');
+      const sizePriceText = select.options[select.selectedIndex].textContent.trim();
+      const pricePerUnit = parseFloat(select.dataset.priceBase) || 
+                          parseFloat(sizePriceText.match(/\d+/)?.[0] || 0);
+      const quantity = parseInt(card.querySelector('.quantity-input').value) || 1;
+      const sum = pricePerUnit * quantity;
+
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td class="p-4 border-b flex items-center gap-3">
+          <img src="${imgSrc}" alt="" class="w-10 h-10 object-cover rounded">
+          ${name} — ${sizePriceText}
+        </td>
+        <td class="p-4 border-b text-center">${quantity}</td>
+        <td class="p-4 border-b text-right">${pricePerUnit.toLocaleString('uk-UA')} грн</td>
+        <td class="p-4 border-b text-right font-medium">${sum.toLocaleString('uk-UA')} грн</td>
+        <td class="p-4 border-b text-center">
+          <button class="remove-row text-red-600 hover:text-red-800 text-xl">×</button>
+        </td>
+      `;
+      cartBody.appendChild(row);
+
+      // Видалення рядка
+      row.querySelector('.remove-row').addEventListener('click', () => {
+        row.remove();
+        updateTotal();
+      });
+
+      updateTotal();
+
+      // НЕ закриваємо модалку автоматично – користувач може додавати далі
+    });
+  });
+
+  function updateTotal() {
+    let total = 0;
+    cartBody.querySelectorAll('tr').forEach(row => {
+      const sumCell = row.cells[3];
+      if (sumCell) total += parseFloat(sumCell.textContent.replace(/\s/g, '')) || 0;
+    });
+    totalSumEl.textContent = total.toLocaleString('uk-UA') + ' грн';
+  }
+</script>
+
 </body>
 </html>
-
